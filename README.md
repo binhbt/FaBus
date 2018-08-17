@@ -8,5 +8,5 @@ allprojects {
     }
 }
 //App project
-compile 'com.github.binhbt:FaBus:$version'
+implementation 'com.github.binhbt:FaBus:$version'
 ```

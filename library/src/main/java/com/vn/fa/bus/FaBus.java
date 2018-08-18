@@ -22,15 +22,15 @@ public class FaBus {
         return localRef;
     }
 
-    private WeakHashMap<String, OnEventReceived> observables = new WeakHashMap<>();
+    private WeakHashMap<Object, OnEventReceived> observables = new WeakHashMap<>();
 
-    public void registerEvent(OnEventReceived listener, String tag) {
+    public void registerEvent(OnEventReceived listener, Object tag) {
         if (listener != null) {
             observables.put(tag, listener);
         }
     }
 
-    public void unRegisterEvent(String tag) {
+    public void unRegisterEvent(Object tag) {
         if (tag != null) {
             observables.remove(tag);
         }

@@ -42,8 +42,8 @@ public class FaBus {
 
     public void postEvent(Object event) {
         if (observables.size() == 0) return;
-        for (Map.Entry<String, OnEventReceived> entry : observables.entrySet()) {
-            String key = entry.getKey();
+        for (Map.Entry<Object, OnEventReceived> entry : observables.entrySet()) {
+            Object key = entry.getKey();
             OnEventReceived listener = entry.getValue();
             listener.onEventReceived(event);
         }

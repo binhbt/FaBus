@@ -2,6 +2,7 @@ package com.vn.fa.bus;
 
 import java.util.Map;
 import java.util.WeakHashMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by leobui on 2018-08-16.
@@ -22,7 +23,7 @@ public class FaBus {
         return localRef;
     }
 
-    private WeakHashMap<String, OnEventReceived> observables = new WeakHashMap<>();
+    private Map<String, OnEventReceived> observables = new ConcurrentHashMap<>();
 
     public void registerEvent(OnEventReceived listener, String tag) {
         if (listener != null) {

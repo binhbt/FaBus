@@ -26,7 +26,7 @@ Add a dependency to your all project `build.gradle`:
 Add a dependency to your `build.gradle`:
 
     dependencies {
-        implementation 'com.github.binhbt:FaBus:$1.0.3'
+        implementation 'com.github.binhbt:FaBus:1.0.3'
     }
 
 

@@ -14,12 +14,12 @@ android {
         versionName "1.0"
         consumerProguardFiles 'proguard-rules.pro'
     }
-    /*
+    
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    */
+    
 }
 
 dependencies {
@@ -65,10 +65,10 @@ buildscript {
     }
 
     dependencies {
-       // classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
     }
 }
-//apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'me.tatarka.retrolambda'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'

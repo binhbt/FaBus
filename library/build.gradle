@@ -80,11 +80,11 @@ buildscript {
         mavenCentral()
     }
 
-    dependencies {
-        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
-    }
+//    dependencies {
+//        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+//    }
 }
-apply plugin: 'me.tatarka.retrolambda'
+//apply plugin: 'me.tatarka.retrolambda'
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'

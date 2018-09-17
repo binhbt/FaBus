@@ -8,7 +8,6 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.vn.fa.bus"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
